@@ -11,6 +11,8 @@ import Sports from './page/Sports'
 import Tennis from './page/Tennis'
 import BookStadium from './page/BookStadium'
 import { useState } from 'react';
+import FacilityEvent from './page/FacilityEvent';
+import FacilityChild from './page/FacilityChild';
 
 function App() { 
     const [Infor,setInfor]= useState([])
@@ -31,6 +33,8 @@ function App() {
                 <Route element={<Tennis />} path='/tennis' />
                 <Route element={<Football />} path='/football' />
                 <Route element={<ContactUs />} path='/contact' />
+                <Route element={<FacilityEvent/>} path='/event'/>
+                <Route element={<FacilityChild/>} path='/child'/>
                 
             </Routes>
         </div>
